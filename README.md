@@ -84,6 +84,14 @@ _N.B.: Blue maps are inputs, and cyan maps are outputs._
   </tr>
 </table>
 
+## Setting up conda environment
+
+From the repository's root directory:
+
+``` bash
+$ conda env create -f environment.yaml
+```
+
 ## Generating the Makefile
 
 From the repository's root directory:
@@ -96,6 +104,7 @@ $ ./bin/generate_makefile
 From the repository's root directory:
 
 ``` bash
+$ conda activate conv_arithmetic
 $ make all_animations
 ```
 

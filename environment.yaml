@@ -1,0 +1,9 @@
+name: conv_arithmetic
+channels:
+- default
+- conda-forge
+dependencies:
+- python=2
+- numpy
+- six
+- gifsicle
