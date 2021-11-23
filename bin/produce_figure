@@ -108,7 +108,7 @@ def make_numerical_tex_string(step, input_size, output_size, padding,
         'OUTPUT_GRID_FROM': '{},{}'.format(offset_x, offset_y),
         'OUTPUT_GRID_TO': '{},{}'.format(offset_x + 1, offset_y + 1),
         'OUTPUT_VALUES': ''.join(
-            "\\node (node) at ({0},{1}) {{\\tiny {2:.1f}}};\n".format(
+            "\\node (node) at ({0},{1}) {{\\footnotesize {2:.0f}}};\n".format(
                 i + 0.5, j + 0.5, output[output_size - 1 - j, i])
             for i, j in itertools.product(range(output_size),
                                           range(output_size))),

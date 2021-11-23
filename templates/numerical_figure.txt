@@ -1,4 +1,7 @@
 \documentclass[class=article,border=0pt]{{standalone}}
+\usepackage{{dejavu}}
+\renewcommand*\familydefault{{\sfdefault}} 
+\usepackage[T1]{{fontenc}}
 \usepackage{{tikz}}
 \usepackage{{xcolor}}
 \definecolor{{blue}}{{HTML}}{{3B528B}}
