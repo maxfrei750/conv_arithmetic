@@ -1,11 +1,11 @@
-\documentclass[class=minimal,border=10pt]{{standalone}}
+\documentclass[class=minimal,border=0pt]{{standalone}}
 \usepackage{{tikz}}
 \usepackage{{xcolor}}
-\definecolor{{blue}}{{RGB}}{{38,139,210}}
-\definecolor{{cyan}}{{RGB}}{{42,161,152}}
+\definecolor{{blue}}{{HTML}}{{3B528B}}
+\definecolor{{cyan}}{{HTML}}{{21918c}}
 \definecolor{{base01}}{{RGB}}{{88,110,117}}
-\definecolor{{base02}}{{RGB}}{{7,54,66}}
-\definecolor{{base03}}{{RGB}}{{0,43,54}}
+\definecolor{{base02}}{{HTML}}{{232323}}
+\definecolor{{base03}}{{HTML}}{{142630}}
 \usetikzlibrary{{calc,shapes,positioning}}
 \begin{{document}}
 \begin{{tikzpicture}}[scale=.5,every node/.style={{minimum size=1cm}},on grid]
