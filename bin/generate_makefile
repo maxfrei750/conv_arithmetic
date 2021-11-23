@@ -44,7 +44,7 @@ animations = (
     ('numerical_average_pooling',
      ('numerical', 5, 3, 0, 3, 1, 1, 'average', False)),
     ('numerical_max_pooling',
-     ('numerical', 5, 3, 0, 3, 1, 1, 'max', False)),
+     ('numerical', 4, 2, 0, 2, 2, 1, 'max', False)),
 )
 
 fields = ('type', 'input-size', 'output-size', 'padding', 'kernel-size',
