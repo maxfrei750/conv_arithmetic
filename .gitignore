@@ -160,3 +160,8 @@ pythontex-files-*/
 
 # Latexian
 TSWLatexianTemp*
+
+# Output
+pdf/
+gif/
+png/
