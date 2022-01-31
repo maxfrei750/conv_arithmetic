@@ -41,6 +41,8 @@ animations = (
      ('numerical', 4, 2, 0, 3, 1, 1, 'convolution', False)),
     ('numerical_padding_strides',
      ('numerical', 5, 3, 1, 3, 2, 1, 'convolution', False)),
+    ('numerical_padding_no_strides',
+     ('numerical', 5, 5, 1, 3, 1, 1, 'convolution', False)),
     ('numerical_average_pooling',
      ('numerical', 5, 3, 0, 3, 1, 1, 'average', False)),
     ('numerical_max_pooling',
