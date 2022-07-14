@@ -14,7 +14,7 @@
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
-*.pdf
+# *.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
@@ -159,7 +159,10 @@ pythontex-files-*/
 TSWLatexianTemp*
 
 # Output
-pdf/
+pdf/*
 gif/
 png/
 
+# thesis
+!pdf/numerical_no_padding_no_strides_*.pdf 
+!pdf/numerical_max_pooling_*.pdf 
