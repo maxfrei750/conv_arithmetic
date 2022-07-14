@@ -1,6 +1,3 @@
-## Makefile
-Makefile
-
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -165,3 +162,4 @@ TSWLatexianTemp*
 pdf/
 gif/
 png/
+
