@@ -1,11 +1,15 @@
 \documentclass[class=minimal,border=0pt]{{standalone}}
 \usepackage{{tikz}}
 \usepackage{{xcolor}}
-\definecolor{{blue}}{{HTML}}{{3B528B}}
-\definecolor{{cyan}}{{HTML}}{{21918c}}
+\definecolor{{blue}}{{HTML}}{{31688e}}
+\definecolor{{teal}}{{HTML}}{{35b779}}
 \definecolor{{base01}}{{RGB}}{{88,110,117}}
-\definecolor{{base02}}{{HTML}}{{232323}}
+\definecolor{{base02}}{{HTML}}{{000000}}
 \definecolor{{base03}}{{HTML}}{{142630}}
+
+% Set default text color.
+\color{white}
+
 \usetikzlibrary{{calc,shapes,positioning}}
 \begin{{document}}
 \begin{{tikzpicture}}[scale=.5,every node/.style={{minimum size=1cm}},on grid]
@@ -32,7 +36,7 @@
                     yslant=0.5,xslant=-0.7]
         \draw (BL) -- ({OUTPUT_BOTTOM_LEFT}) (BR) -- ({OUTPUT_BOTTOM_RIGHT})
               (TL) -- ({OUTPUT_TOP_LEFT})    (TR) -- ({OUTPUT_TOP_RIGHT});
-        \draw[fill=cyan] (0,0) rectangle ({OUTPUT_TO});
+        \draw[fill=teal] (0,0) rectangle ({OUTPUT_TO});
         \draw[step=10mm, base03, thick] (0,0) grid ({OUTPUT_TO});
         \draw[fill=base02, opacity=0.4] ({OUTPUT_GRID_FROM}) rectangle
                                         ({OUTPUT_GRID_TO});
