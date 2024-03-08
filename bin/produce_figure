@@ -6,6 +6,7 @@ import subprocess
 from glob import glob
 
 import numpy
+import pdfCropMargins
 import six
 
 numpy.random.seed(1234)
@@ -270,6 +271,23 @@ def compile_figure(which_, name, step, **kwargs):
             + glob("pdf/{}.aux".format(jobname))
             + glob("pdf/{}.log".format(jobname))
         )
+
+        output_files = glob("pdf/{}*".format(jobname))
+
+        for output_file in output_files:
+            pdfCropMargins.crop(
+                [
+                    "-p",
+                    "10",
+                    "--modifyOriginal",
+                    str(output_file),
+                ]
+            )
+
+        junk_files = glob("{}*_uncropped.pdf".format(jobname))
+
+        for junk_file in junk_files:
+            os.remove(junk_file)
 
 
 if __name__ == "__main__":
